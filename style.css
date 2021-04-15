@@ -1,0 +1,233 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/1.%20Noob/3.%20social-proof-section-master/images/bg-pattern-top-desktop.svg) no-repeat,
+        url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/1.%20Noob/3.%20social-proof-section-master/images/bg-pattern-bottom-desktop.svg) no-repeat;
+    background-color:   #ccf5ff;
+}
+
+
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;  
+    padding-top: 100px; 
+    justify-content: space-evenly;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opis {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    justify-content: space-around;
+}
+
+.naslovOpisa{
+    color:#990073;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.tekstOpisa{
+    color: #b300b3;
+    font-weight: bold;
+    text-align: justify;
+    font-size: smaller;
+}
+
+.span-1{
+   font-size: 40px;
+}
+.span-2{
+    font-size: 30px;
+}
+
+.kontejnerZaOcene{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ocena-1{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffe6ff;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    width: 82%;
+    color: #990073;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.ocena-2{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffe6ff;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 82%;
+    color: #990073;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.ocena-3{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffe6ff;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    width: 82%;
+    color: #990073;
+    font-weight: bold;
+}
+
+.opisOcene{
+    padding-left: 40px;
+}
+
+.customers{
+    display: flex;                      /*Kad ovde postavim flex, ne znam kako posle da ih postavim na razlicitim nivoima*/
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+
+/*.customerReview1{
+    float: left;
+}
+.customerReview2{
+    float: left;
+    margin-top: 25px;
+    margin-left: 90px;                  
+}
+.customerReview3{
+    float: right;
+    margin-top: 50px;
+}*/
+
+.customerReview1, .customerReview2, .customerReview3 {
+    background-color:#990073;
+    width:27%;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    padding-bottom: 0;
+    position: relative;
+    height: 65%;
+    text-align: justify;
+}
+
+.customerReview2 {
+    margin-top: 7.5%;
+}
+
+.customerReview3 {
+    margin-top: 15%;
+}
+
+.customerPic{
+    border-radius: 50px;
+    width: 50px;
+}
+
+.ime{
+    position: absolute;
+    display: inline;
+    padding-top:5px;
+    padding-left: 25px;
+    color: thistle;
+    padding-right: 20px;
+}
+
+.zanimanje{
+    position: absolute;
+    display: inline;
+    padding-top:31px;
+    padding-left: 25px;
+    color: palevioletred;
+}
+
+.tekst{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color:thistle;
+    font-size: smaller;
+}
+
+
+/*Odavde je za mobilni*/
+@media (max-width: 1045px) {
+    .kontejner {
+      flex-direction: column;
+      padding-top: 40px;
+    }
+    .opis{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .naslovOpisa{
+        justify-content: center;
+        text-align: center;
+    }
+    .tekstOpisa{
+        justify-content: center;
+        text-align: center;
+    }
+    .customers {
+      flex-direction: column;
+      width: 100%;
+      margin: 5px;
+    }
+
+    .kontejnerZaOcene{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .ocena-1, .ocena-2, .ocena-3 {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .opisOcene{
+        padding-left: 0;
+        margin: auto;
+    }
+    .customerReview1, .customerReview2, .customerReview3{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .zvezdice{
+        padding-left: 0;
+        margin: auto;
+    }
+   /* .customerReview2{                   Ova dva sam dodao kada sam gore customers promenio sa flex na block
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .customerReview3{
+        margin-top:0;
+    }*/
+  }
